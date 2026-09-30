@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGenie - AI Learning Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="app">
+    <header>
+        <div class="logo">🎓 EduGenie</div>
+        <p>Google Gemini Powered Learning Assistant</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <label for="task">Choose a learning task</label>
+            <select id="task">
+                <option value="qa">Q&A</option>
+                <option value="explain">Explain</option>
+                <option value="quiz">Generate Quiz</option>
+                <option value="summarize">Summarize</option>
+                <option value="learn">Learning Path</option>
+            </select>
+
+            <label for="inputText">Enter your topic, question or text</label>
+            <textarea id="inputText" placeholder="Type here..."></textarea>
+
+            <button id="submitBtn" onclick="runTask()">✨ Ask EduGenie</button>
+        </section>
+
+        <section class="result-card">
+            <h2>Result</h2>
+            <div id="result">Your answer will appear here.</div>
+        </section>
+    </main>
+
+    <footer>EduGenie • AI-powered learning assistant</footer>
+</div>
+<script src="/static/script.js"></script>
+</body>
+</html>
